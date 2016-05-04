@@ -1,0 +1,16 @@
+{
+  "require":
+  {
+    "silex/silex": "1.3.*",
+    "doctrine/dbal": "2.2.*",
+    "twig/twig": "1.*",
+    "symfony/twig-bridge": "2.7.*"
+  },
+  "autoload":
+  {
+    "psr-4":
+    {
+      "Livre\\": "src"
+    }
+  }
+}

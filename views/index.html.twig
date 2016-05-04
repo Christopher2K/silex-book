@@ -1,0 +1,12 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    {% for book in books %}
+        <article>
+            <h2><a class="bookTitle" href="{{ path('book', {id: book.id}) }}">{{ book.title }}</a></h2>
+            <p>{{ book.summary }}</p>
+        </article>
+    {% endfor %}
+{% endblock %}
